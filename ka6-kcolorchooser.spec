@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.08.3
+%define		kdeappsver	24.12.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kcolorchooser
 Summary:	KColorChooser
 Name:		ka6-%{kaname}
-Version:	24.08.3
+Version:	24.12.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	f0f7774845c2e5adde23020eabcb5740
+# Source0-md5:	1709cd2ae4fca75c5ffd232e4cb01698
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.20
