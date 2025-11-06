@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kcolorchooser
 Summary:	KColorChooser
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	5456a7334dcb4df332d6c35dde50d37f
+# Source0-md5:	816cccfd4f162a2fe4a5b12f7c8b322e
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.20
@@ -42,15 +42,14 @@ range of standard palletes available. Color values shown in
 Hue-Saturation-Value (HSV), Red-Green-Blue (RGB) and HTML formats.
 
 %description -l pl.UTF-8
-KColorChooser jest prostą aplikacją do wybrania koloru z ekranu
-lub z palety.
+KColorChooser jest prostą aplikacją do wybrania koloru z ekranu lub z
+palety.
 
 Właściwości:
 
 Zaznaczenie kolorów z dowolnej lokalizacji na ekranie. Wybieranie
-kolorów z zestawu standardowych palet. Wartości są pokazywane
-W Hue-Saturation-Value (HSV), Red-Green-Blue (RGB) i w formacie
-HTML.
+kolorów z zestawu standardowych palet. Wartości są pokazywane W
+Hue-Saturation-Value (HSV), Red-Green-Blue (RGB) i w formacie HTML.
 
 %prep
 %setup -q -n %{kaname}-%{version}
